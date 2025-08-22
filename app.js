@@ -1,6 +1,6 @@
 const express = require('express');
 const router = require('./routes/regular/index');
-const admin = require('./routes/admin/adminRouter')
+const admin = require('./routes/admin/adminRouter');
 const connectDB = require('./db/connect');
 const app = express();
 const path = require('path');
@@ -11,12 +11,17 @@ require('dotenv').config();
 app.use(cors());
 app.use(express.json());
 
+//test route
+app.get('/', (req, res) => {
+  res.send('API is LIVE>>>>');
+});
+
 // API Routes
 app.use('/api/', router);
 
 //admin routes
 
-app.use('/admin', admin)
+app.use('/admin', admin);
 
 // Serve static images and frontend
 app.use('/images', express.static(path.join(__dirname, 'images')));
