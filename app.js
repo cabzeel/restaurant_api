@@ -8,7 +8,11 @@ const cors = require('cors');
 require('dotenv').config();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://comfort237.netlify.app/', 
+  })
+);
 app.use(express.json());
 
 //test route
