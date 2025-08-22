@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/v1/specials
+Content-Type: multipart/form-data; boundary=----ZenoBoundary7MA4YWxkTrZu0gW
+
+------ZenoBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="1752668928120-sign.webp"
+Content-Type: image/webp
+
+< ./images/1752668928120-sign.webp
+------ZenoBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="name"
+
+special dish
+------ZenoBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="description"
+
+some special dish
+------ZenoBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="price"
+
+140
+------ZenoBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="category"
+
+protein
+------ZenoBoundary7MA4YWxkTrZu0gW--
