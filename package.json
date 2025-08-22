@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start" : "node app.js",
     "dev": "node --watch --trace-warnings --env-file=.env app.js",
     "seed": "node seeder.js"
   },
